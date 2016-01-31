@@ -20,7 +20,7 @@ class ReDI
     def self.configure options = {}
       @@auth = options.delete(:auth)
       raise "Please provide an auth token" unless @@auth
-      @@url = options.delete(:url) || "http://redi-projects.probsteide.com"
+      @@url = options.delete(:url) || "https://redi-projects.herokuapp.com"
     end
 
     def self.all
